@@ -1,0 +1,2 @@
+CREATE TABLE `agency` ( `agency_id` INT(11) NOT NULL , `agency_name` VARCHAR(100) NOT NULL , `agency_url` VARCHAR(100) NOT NULL , `agency_timezone` VARCHAR(50) NOT NULL , `agency_lang` VARCHAR(5) NOT NULL , PRIMARY KEY (`agency_id`));
+INSERT INTO `agency`(`agency_id`, `agency_name`, `agency_url`, `agency_timezone`, `agency_lang`) VALUES ("1","SPTRANS","http://www.sptrans.com.br/?versao=090618","America/Sao_Paulo","pt");

@@ -1,0 +1,36 @@
+.selected {
+    background-color: #45b5ac;
+}
+
+.row {
+    margin-top: 0px;
+}
+
+.buttons {
+    padding: 0.75rem;
+}
+
+.card-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+#mapa {
+    height: 100%;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    position: absolute!important;
+}
+
+#linhas {
+    position: relative;
+}

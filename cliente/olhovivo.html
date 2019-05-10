@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="materialize.min.css">
+    <link rel="stylesheet" href="olhovivo.css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+	<nav class="nav-fixed">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Cadê o motô?</a>
+			<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="#!" onclick="linhasM()">Linhas</a></li>
+				<li><a href="#!" onclick="trajetosM()">Trajetos</a></li>
+			</ul>
+		</div>
+		<!--<div class="nav-content">
+			<ul class="tabs tabs-transparent">
+				<li class="tab">
+					<a href="#!" onclick="linhasM()">Linhas</a>
+				</li>
+				<li class="tab">
+					<a href="#!" onclick="trajetosM()">Trajetos</a>
+				</li>
+			</ul>
+		</div>-->
+	</nav>
+	<ul class="sidenav" id="mobile-demo">
+		<li><a href="#!" onclick="linhasM()">Linhas</a></li>
+		<li><a href="#!" onclick="trajetosM()">Trajetos</a></li>
+	</ul>
+  
+	<!--<div class="container">-->
+		<div id="linhas">
+			<div class="row">
+				<form class="col s12">
+				  <div class="row">
+					<div class="input-field col s6">
+					  <i class="material-icons prefix">directions_bus</i>
+					  <input id="busca_linhas" type="text" maxlength="7">
+					  <label for="busca_linhas">Buscar linha</label>
+					   <button class="btn waves-effect waves-light" type="button" id="btnBuscar">Buscar<i class="material-icons right">done</i></button>
+					</div>
+				  </div>
+				</form>
+			</div>
+			<div id="listarLinhas">
+				<div id="listaDeLinhas">
+				
+				</div>
+				<div class="buttons">
+					<button class="waves-effect waves-light btn" onclick="limpar()">Limpar</button>
+					<button class="waves-effect waves-light btn" onclick="enviarDados()">Enviar</button>
+				</div>
+			</div>
+		</div>
+		<div id="trajetos">
+			<div id="mapa">
+
+			</div>
+			<div class="fixed-action-btn toolbar direction-top" style="transition: transform 0.2s; transform: translate3d(0px, 0px, 0px);">
+				<a class="btn-floating btn-large red" style="transition: transform 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19); transform: translate3d(0px, 0px, 0px);">
+					<i class="material-icons">refresh</i>
+				</a>
+			</div>
+		</div>
+	<!--</div>-->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="materialize.min.js"></script>
+    <script src="olhovivo.js"></script>
+	<script src="jquery.mask.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1hIAPoJGxCdYNCHWAukauOmDDeXlCz-c&callback=iniciaTudo" async defer></script>
+</body>
+</html>
